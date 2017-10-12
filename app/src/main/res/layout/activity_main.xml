@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.allan.basketballquizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <View
+            android:id="@+id/progress1"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress2"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress3"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress4"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress5"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress6"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress7"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress8"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress9"
+            style="@style/ProgressBar" />
+
+        <View
+            android:id="@+id/progress10"
+            style="@style/ProgressBar" />
+
+    </LinearLayout>
+
+    <ScrollView
+        style="@style/RadioButtonCheckBoxStyle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/RadioButtonCheckBoxStyle">
+
+                <ImageView
+                    style="@style/ImageStyle"
+                    android:contentDescription="@string/basketball_content_description"
+                    android:src="@drawable/bb1" />
+
+                <TextView
+                    style="@style/MainQuestion"
+                    android:text="@string/MainQuestion" />
+            </LinearLayout>
+
+            <!-- Question 1
+            Answer: LA Lakers -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:layout_marginTop="16dp"
+                android:text="@string/question_1_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question1" />
+
+            <RadioGroup
+                android:id="@+id/question1RadioGroup"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option1Q1"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question1_option1" />
+
+                <RadioButton
+                    android:id="@+id/option2Q1"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question1_option2" />
+
+                <RadioButton
+                    android:id="@+id/option3Q1"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question1_option3" />
+            </RadioGroup>
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 2
+            Answer: Majic johnson and Micheal Jordan -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_2_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question2" />
+
+            <CheckBox
+                android:id="@+id/option1Q2"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question2_option1" />
+
+            <CheckBox
+                android:id="@+id/option2Q2"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question2_option2" />
+
+            <CheckBox
+                android:id="@+id/option3Q2"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question2_option3" />
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 3
+            Answer: Majic Johnson -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_3_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question3" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Q3"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/question3_hint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 4
+            Answer: His first coach was murdered at age 35 -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_4_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question4" />
+
+            <RadioGroup
+                android:id="@+id/question4RadioGroup"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option1Q4"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question4_option1" />
+
+                <RadioButton
+                    android:id="@+id/option2Q4"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question4_option2" />
+
+                <RadioButton
+                    android:id="@+id/option3Q4"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question4_option3" />
+
+            </RadioGroup>
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 5
+            Answer: Mouthguard -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_5_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question5" />
+
+            <RadioGroup
+                android:id="@+id/question5RadioGroup"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option1Q5"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question5_option1" />
+
+                <RadioButton
+                    android:id="@+id/option2Q5"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question5_option2" />
+
+                <RadioButton
+                    android:id="@+id/option3Q5"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question5_option3" />
+
+                <RadioButton
+                    android:id="@+id/option4Q5"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question5_option4" />
+
+            </RadioGroup>
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 6
+            Answer: Micheal Jordan and Shaquille O'Neal -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_6_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question6" />
+
+            <CheckBox
+                android:id="@+id/option1Q6"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question6_option1" />
+
+            <CheckBox
+                android:id="@+id/option2Q6"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question6_option2" />
+
+            <CheckBox
+                android:id="@+id/option3Q6"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question6_option3" />
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 7
+            Answer: Micheal Jordan -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_7_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question7" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Q7"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/question7_hint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 8
+            Answer: all 3 options -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_8_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question8" />
+
+            <CheckBox
+                android:id="@+id/option1Q8"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question8_option1" />
+
+            <CheckBox
+                android:id="@+id/option2Q8"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question8_option2" />
+
+            <CheckBox
+                android:id="@+id/option3Q8"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:text="@string/question8_option3" />
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 9
+            Answer: James Naismith -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_9_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question9" />
+
+            <RadioGroup
+                android:id="@+id/question9RadioGroup"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/option1Q9"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question9_option1" />
+
+                <RadioButton
+                    android:id="@+id/option2Q9"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question9_option2" />
+
+                <RadioButton
+                    android:id="@+id/option3Q9"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question9_option3" />
+
+                <RadioButton
+                    android:id="@+id/option4Q9"
+                    style="@style/RadioButtonCheckBoxStyle"
+                    android:text="@string/question9_option4" />
+
+            </RadioGroup>
+
+            <View style="@style/ViewStyle" />
+
+            <!-- Question 10
+            The Detroit Pistons -->
+
+            <TextView
+                style="@style/QuestionsHeadings"
+                android:text="@string/question_10_header" />
+
+            <TextView
+                style="@style/Questions"
+                android:text="@string/Question10" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/Q10"
+                    style="@style/EditTextStyle"
+                    android:hint="@string/question10_hint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/RadioButtonCheckBoxStyle"
+                android:layout_marginBottom="16dp"
+                android:text="@string/button_Text" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
